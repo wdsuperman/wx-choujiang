@@ -1,0 +1,83 @@
+.wrap{
+    width: 100%;
+    padding-top: 49rpx;
+}
+.goods{
+    width: 90%;
+    margin: 0 auto;
+}
+.goodsList{
+    margin-bottom: 38rpx;
+    box-shadow: 0 0 30rpx #dcdcdc;
+    padding-bottom: 42rpx;
+    border-radius: 8rpx;
+}
+.goodsImg{
+    border-radius: 8rpx 8rpx 0 0;
+    width: 100%;
+    height: 390rpx;
+    background-color: #ddd;
+    display: block;
+}
+.image{
+    position: relative;
+}
+.pos{
+    position: absolute;
+    top: 24rpx;
+    right: 0;
+    font-size: 26rpx;
+    line-height: 50rpx;
+    height: 50rpx;
+    padding: 0 26rpx;
+    background-color: #d05242;
+    color: #fff;
+    border-radius: 50rpx 0 0 50rpx;
+}
+.body{
+    padding-top: 20rpx;
+    padding-left: 25rpx;
+}
+.sp{
+    font-size: 30rpx;
+    line-height: 50rpx;
+    font-weight: 500;
+}
+.time{
+    font-size: 24rpx;
+    color: #777;
+    margin-top: 24rpx;
+    margin-left: 8rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.goodsNum{
+    color: #5f5f5f;
+    font-size: 28rpx;
+    margin-left: 34rpx;
+}
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26rpx;
+    color: #777;
+    margin-bottom: 58rpx;
+}
+.msg image{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 20rpx;
+}
+.addImg{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}
+.add{
+    display: flex;
+    align-items: center;
+    margin-right: 30rpx;
+    color: #e6645f;
+}

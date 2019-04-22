@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/tyLottery/tyLottery",
+        "pages/xcLottery/xcLottery",
+        "pages/my/my"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "selectedIconPath": "image/home1.png",
+                "iconPath": "image/home.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "image/home1.png",
+                "iconPath": "image/home.png",
+                "pagePath": "pages/tyLottery/tyLottery",
+                "text": "通用"
+            },
+            {
+                "selectedIconPath": "image/home1.png",
+                "iconPath": "image/home.png",
+                "pagePath": "pages/xcLottery/xcLottery",
+                "text": "现场"
+            },
+            {
+                "selectedIconPath": "image/home1.png",
+                "iconPath": "image/home.png",
+                "pagePath": "pages/my/my",
+                "text": "我的"
+            }
+        ],
+        "color": "#7d7d7d",
+        "selectedColor": "#d05241"
+
+
+    }
+}

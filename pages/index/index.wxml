@@ -1,0 +1,21 @@
+<view class='wrap'>
+    <view class='goods' wx:for='{{goods}}' wx:key='{{item.id}}'>
+        <view class='goodsList'>
+            <view class='image'>
+                <image class='goodsImg' src='{{item.image}}' />
+                <view class='pos'>{{item.shangjia}}</view>
+            </view>
+            <view class='body'>
+                <view class='sp' wx:for='{{item.sp}}' wx:for-item='sp' wx:key='{{sp.id}}'>
+                    <text>{{sp.title}}</text>：
+                    <text> {{sp.content}}</text>
+                    <text class='goodsNum'>x{{sp.num}}</text>
+                </view>
+                <view class='time'><text>{{item.time}}</text><view class='add' hidden='{{!item.add}}'><image class='addImg' src='../../image/对 (1).png' /><text>已参与</text></view></view>
+            </view>
+        </view>
+    </view>
+    <view class='msg'>
+        <text>有新奖品上架时通知我</text> <image bindtap='sure' src='{{sure}}'/>
+    </view>
+</view>
