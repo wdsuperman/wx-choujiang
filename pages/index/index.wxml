@@ -8,14 +8,23 @@
             <view class='body'>
                 <view class='sp' wx:for='{{item.sp}}' wx:for-item='sp' wx:key='{{sp.id}}'>
                     <text>{{sp.title}}</text>：
-                    <text> {{sp.content}}</text>
-                    <text class='goodsNum'>x{{sp.num}}</text>
+                    <text class='content1'> {{sp.content}} <text class='goodsNum'>x{{sp.num}}</text></text>
                 </view>
-                <view class='time'><text>{{item.time}}</text><view class='add' hidden='{{!item.add}}'><image class='addImg' src='../../image/对 (1).png' /><text>已参与</text></view></view>
+                <view class='time'>
+                    <text>{{item.time}}</text>
+                    <view class='add' wx:if='{{item.add}}'>
+                        <image class='addImg' src='../../image/对 (1).png' />
+                        <text>已参与</text>
+                    </view>
+                </view>
+                <view class='join' wx:if='{{item.join.length}}'>参与条件： <text class='tj'>{{item.join}}</text></view>
             </view>
         </view>
     </view>
-    <view class='msg'>
-        <text>有新奖品上架时通知我</text> <image bindtap='sure' src='{{sure}}'/>
-    </view>
+    <form>
+        <view class='msg' form-type="submit" plain>
+            <text>有新奖品上架时通知我</text>
+            <image bindtap='sure' src='{{sure}}' />
+        </view>
+    </form>
 </view>
