@@ -1,0 +1,21 @@
+<view class='wrap'>
+    <view class='bg'></view>
+    <view class='info'>
+        <image class='avatar'></image>
+        <view class='name'>name</view>
+        <view class='choujiang'>
+            <view>
+                <view class='num'>0</view>
+                <view class='text'>参与抽奖</view>
+            </view>
+            <view>
+                <view class='num'>0</view>
+                <view class='text'>参与抽奖</view>
+            </view>
+            <view>
+                <view class='num'>0</view>
+                <view class='text'>参与抽奖</view>
+            </view>
+        </view>
+    </view>
+</view>

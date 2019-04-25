@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+    "usingComponents": {},
+    "navigationBarTitleText": "快点抽奖",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#db6257"
 }

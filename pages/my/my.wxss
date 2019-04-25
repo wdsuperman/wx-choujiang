@@ -1,0 +1,47 @@
+.wrap{
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.bg{
+    width: 100%;
+    background-color: #db6257;
+    height: 170rpx;
+}
+.info{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -100rpx;
+    background-color: #fff;
+    border-radius: 8rpx;
+    margin-bottom: 20rpx;
+}
+.avatar{
+    width: 124rpx;
+    height: 124rpx;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-top: -62rpx;
+    margin-left: 41%;
+}
+.choujiang{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.num{
+    font-size: 39rpx;
+    color: #393939;
+    font-weight: 550;
+}
+.text{
+    font-size: 28rpx;
+    color: #5a5a5a;
+}
+.name{
+    font-size: 28rpx;
+    color: #eb4838;
+    text-align: center;
+    margin: 10rpx 0 16rpx 0;
+}

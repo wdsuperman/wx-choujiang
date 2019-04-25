@@ -1,9 +1,9 @@
 {
     "pages": [
+        "pages/my/my",
         "pages/index/index",
         "pages/tyLottery/tyLottery",
-        "pages/xcLottery/xcLottery",
-        "pages/my/my"
+        "pages/xcLottery/xcLottery"
     ],
     "window": {
         "backgroundTextStyle": "light",
