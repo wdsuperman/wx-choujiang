@@ -1,13 +1,25 @@
-// pages/xcTottery/xcLottery.js
+// pages/my/fabu/fabu.js
 Page({
 
     /**
      * 页面的初始数据
      */
+
     data: {
-
+        switch: '进行中',//切换 进行中 和 已结束
     },
-
+    changeSwitch(e) {
+        const id = e.currentTarget.dataset.id
+        if (id == 1) {
+            this.setData({
+                switch: '进行中'
+            })
+        } else {
+            this.setData({
+                switch: '已结束'
+            })
+        }
+    },
     /**
      * 生命周期函数--监听页面加载
      */

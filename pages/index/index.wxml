@@ -1,5 +1,5 @@
 <view class='wrap'>
-    <view class='goods' wx:for='{{goods}}' wx:key='{{item.id}}'>
+    <view class='goods' bindtap='add' wx:for='{{goods}}' wx:key='{{item.id}}'>
         <view class='goodsList'>
             <view class='image'>
                 <image class='goodsImg' src='{{item.image}}' />
@@ -13,7 +13,7 @@
                 <view class='time'>
                     <text>{{item.time}}</text>
                     <view class='add' wx:if='{{item.add}}'>
-                        <image class='addImg' src='../../image/对 (1).png' />
+                        <image class='addImg' src='../../image/sure.png' />
                         <text>已参与</text>
                     </view>
                 </view>

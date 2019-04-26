@@ -4,18 +4,34 @@
         <image class='avatar'></image>
         <view class='name'>name</view>
         <view class='choujiang'>
-            <view>
+            <view bindtap='canyu'>
                 <view class='num'>0</view>
                 <view class='text'>参与抽奖</view>
             </view>
-            <view>
+            <view bindtap='fabu'>
                 <view class='num'>0</view>
-                <view class='text'>参与抽奖</view>
+                <view class='text'>发布抽奖</view>
             </view>
-            <view>
+            <view bindtap='zhongjiang'>
                 <view class='num'>0</view>
-                <view class='text'>参与抽奖</view>
+                <view class='text'>中奖记录</view>
             </view>
+        </view>
+    </view>
+    <view class='luck'>
+        <view class='luckContent'>
+            <image class='icon' src=''/>
+            <view class='luckText'>我的幸运币:<text>5</text></view>
+        </view>
+        <image class='arrow' src='../../image/arrow.png' />
+    </view>
+    <view class='list'>
+        <view wx:for='{{list}}' wx:key='{{item.id}}' bindtap='jumpList' data-url='{{item.url}}'>
+            <view class='listContent'>
+                <image class='icon' src='{{item.icon}}'/>
+                <text>{{item.title}}</text>
+            </view>
+            <image class='arrow' src='{{item.arrow}}'/>
         </view>
     </view>
 </view>

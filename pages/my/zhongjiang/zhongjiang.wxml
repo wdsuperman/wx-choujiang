@@ -1,0 +1,8 @@
+<view class='wrap'>
+    <view class='switch'>
+        <view style='background-color:{{switch === "待领取" ? "#d66054" : "none"}};color:{{switch === "待领取" ? "#fff" : "#000"}}' data-id='1' bindtap='changeSwitch'>进行中</view>
+        <view style='background-color:{{switch === "已领取" ? "#d66054" : "none"}};color:{{switch === "已领取" ? "#fff" : "#000"}}' data-id='2' bindtap='changeSwitch'>已结束</view>
+    </view>
+    <image class='nomore' src='../../../image/lihe.png'/>
+    <view class='tis'>您还没有中奖记录，快去首页抽个奖吧</view>
+</view>

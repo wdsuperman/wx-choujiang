@@ -1,0 +1,35 @@
+<view class='wrap'>
+    <view class='switch'>
+        <view style='background-color:{{switch === "进行中" ? "#d66054" : "none"}};color:{{switch === "进行中" ? "#fff" : "#000"}}' data-id='1' bindtap='changeSwitch'>进行中</view>
+        <view style='background-color:{{switch === "已结束" ? "#d66054" : "none"}};color:{{switch === "已结束" ? "#fff" : "#000"}}' data-id='2' bindtap='changeSwitch'>已结束</view>
+    </view>
+    <view wx:if="{{switch === '进行中'}}">
+        <view class='goods' wx:for='{{goods}}' wx:key='{{item.id}}'>
+            <view class='goodsList'>
+                <view class='image'>
+                    <image class='goodsImg' src='{{item.image}}' />
+                    <view class='pos'>{{item.shangjia}}</view>
+                </view>
+                <view class='body'>
+                    <view class='sp' wx:for='{{item.sp}}' wx:for-item='sp' wx:key='{{sp.id}}'>
+                        <text>{{sp.title}}</text>：
+                        <text class='content1'> {{sp.content}} <text class='goodsNum'>x{{sp.num}}</text></text>
+                    </view>
+                    <view class='time'>
+                        <text>{{item.time}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:else>
+        <view class='over' wx:for='{{over}}' wx:key='{{item.id}}'>
+            <text>奖品: {{item.title}}</text>
+            <view class='overTime'>
+                <text>{{item.time}} {{item.num}}</text>
+                <image class='overImg' src='{{item.arrow}}' />
+            </view>
+        </view>
+    </view>
+    <view class='msg'>没有了，快去参加其他抽奖吧</view>
+</view>

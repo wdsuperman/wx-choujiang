@@ -1,0 +1,12 @@
+<view class='wrap'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item}}"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view>
+        
+    </view>
+</view>

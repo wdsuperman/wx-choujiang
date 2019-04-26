@@ -1,17 +1,16 @@
-// pages/index/index.js
+// pages/my/canyu/canyu.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        goods: [{
+        switch: '进行中',//切换 进行中 和 已结束
+        goods: [{  // 进行中显示
                 id: 1,
                 image: '', //商品图片
                 shangjia: '打卡56天领福利', // 右上角红框内字
                 time: '9小时41分钟后 自动开奖', // 开奖时间
-                add: true, //是否已参加
-                join: '仅限女性用户参与', // 参加性别限制
                 sp: [{
                         id: 1,
                         title: '奖项一',
@@ -25,14 +24,13 @@ Page({
                         num: '不限'
                     },
                 ],
+
             },
             {
                 id: 2,
                 image: '',
                 shangjia: '打卡56天领福利',
                 time: '9小时41分钟后 自动开奖',
-                add: true,
-                join: '',
                 sp: [{
                         id: 1,
                         title: '奖项一',
@@ -58,8 +56,6 @@ Page({
                 image: '',
                 shangjia: '打卡56天领福利',
                 time: '9小时41分钟后 自动开奖',
-                add: false,
-                join: '仅限女性用户参与',
                 sp: [{
                     id: 1,
                     title: '奖项一',
@@ -68,38 +64,41 @@ Page({
                 }]
             }
         ],
-        sure: '../../image/sure1.png',
-        msg: false
+        over:[
+            {
+                id:1,
+                title:'垃圾桶垃圾桶垃圾桶垃圾桶',
+                time:'04月01日',
+                num:'15时',
+                arrow:'../../../image/arrow.png'
+            },
+            {
+                id: 2,
+                title: '垃圾桶垃圾桶垃圾桶垃圾桶',
+                time: '04月01日',
+                num: '15时',
+                arrow: '../../../image/arrow.png'
+            }
+        ]
     },
-    add() {
-        wx.navigateTo({
-            url: '../details/details',
-        })
-    },
-    sure() { //勾选按钮
-        if (!this.data.msg) {
+    changeSwitch(e){
+        const id = e.currentTarget.dataset.id
+        if(id == 1){
             this.setData({
-                sure: '../../image/sure.png',
-                msg: true
+                switch:'进行中'
             })
-            console.log('选定')
-        } else {
+        } else{
             this.setData({
-                sure: '../../image/sure1.png',
-                msg: false
+                switch: '已结束'
             })
-            console.log('取消')
         }
-    },
-    jump() {
-        wx.navigateTo({
-            url: '../tyLottery/tyLottery',
-        })
     },
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: function(options) {},
+    onLoad: function(options) {
+
+    },
 
     /**
      * 生命周期函数--监听页面初次渲染完成

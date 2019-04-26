@@ -1,0 +1,113 @@
+/* pages/my/canyu/canyu.wxss */
+page{
+    background-color: #f0f0f0;
+}
+.wrap{
+    padding-top: 40rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.switch{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100rpx;
+    background-color: #fff;
+    font-size: 32rpx;
+}
+.switch>view{   
+    width: 100%;
+    border-radius:  100rpx;
+    text-align: center;
+    line-height: 74rpx;
+}
+.goods{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 38rpx;
+}
+.goodsList{
+    margin-bottom: 38rpx;
+    box-shadow: 0 0 30rpx #dcdcdc;
+    padding-bottom: 42rpx;
+    border-radius: 8rpx;
+}
+.goodsList:last-child{
+    margin: 0;
+}
+.goodsImg{
+    border-radius: 8rpx 8rpx 0 0;
+    width: 100%;
+    height: 390rpx;
+    background-color: #ddd;
+    display: block;
+}
+.image{
+    position: relative;
+}
+.pos{
+    position: absolute;
+    top: 24rpx;
+    right: 0;
+    font-size: 26rpx;
+    line-height: 50rpx;
+    height: 50rpx;
+    padding: 0 26rpx;
+    background-color: #d05242;
+    color: #fff;
+    border-radius: 50rpx 0 0 50rpx;
+}
+.body{
+    padding-top: 20rpx;
+    padding-left: 25rpx;
+}
+.sp{
+    font-size: 30rpx;
+    line-height: 50rpx;
+    font-weight: 500;
+    display: flex;
+}
+.time{
+    font-size: 24rpx;
+    color: #777;
+    margin-top: 24rpx;
+    margin-left: 8rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.goodsNum{
+    color: #5f5f5f;
+    font-size: 28rpx;
+    margin-left: 34rpx;
+}
+.content1{
+    width: 530rpx;
+}
+.msg{
+    text-align: center;
+    font-size: 24rpx;
+    color: #676767;
+    line-height: 100rpx;
+}
+.over{
+    display: flex;
+    font-size: 28rpx;
+    padding: 55rpx 45rpx 55rpx 50rpx;
+    background-color: #fff;
+    justify-content: space-between;
+    margin-top: 24rpx
+}
+.overImg{
+    width: 14rpx;
+    height: 24rpx;
+    margin-left: 14rpx;
+}
+.overTime{
+    font-size: 22rpx;
+    display: flex;
+    align-items: center;
+    color: #6c6c6c;
+}

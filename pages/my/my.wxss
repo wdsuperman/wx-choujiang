@@ -1,6 +1,7 @@
 .wrap{
     width: 100%;
     background-color: #f1f1f1;
+    height: 100vh;
 }
 .bg{
     width: 100%;
@@ -30,10 +31,14 @@
     justify-content: space-around;
     text-align: center;
 }
+.choujiang>view{
+    width: 100%;
+    padding-bottom: 36rpx;
+}
 .num{
     font-size: 39rpx;
     color: #393939;
-    font-weight: 550;
+    font-weight: 600;
 }
 .text{
     font-size: 28rpx;
@@ -44,4 +49,62 @@
     color: #eb4838;
     text-align: center;
     margin: 10rpx 0 16rpx 0;
+}
+.luck{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 8rpx;
+    padding: 40rpx 30rpx 40rpx 35rpx;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+}
+.arrow{
+    width: 18rpx;
+    height: 29rpx;
+}
+.icon{
+    width: 28rpx;
+    height: 28rpx;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 22rpx;
+}
+.luckContent{
+    display: flex;
+    align-items: center;
+}
+.luckText{
+    font-size: 28rpx;
+    display: flex;
+    align-items: center;
+    color: #3d3d3d;
+}
+.luckText text{
+    font-size: 32rpx;
+    margin-left: 18rpx;
+    font-weight: 600;
+}
+.list{
+    width: 90%;
+    background-color: #fff;
+    padding: 10rpx 30rpx 10rpx 35rpx;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 8rpx;
+}
+.list>view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28rpx;
+    color: #404040;
+    padding: 32rpx 0;
+}
+.listContent{
+    display: flex;
+    align-items: center;
 }

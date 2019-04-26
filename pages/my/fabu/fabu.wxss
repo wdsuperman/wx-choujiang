@@ -1,0 +1,45 @@
+page{
+    background-color: #f0f0f0;
+}
+.wrap{
+    padding-top: 40rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.switch{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100rpx;
+    background-color: #fff;
+    font-size: 32rpx;
+}
+.switch>view{   
+    width: 100%;
+    border-radius:  100rpx;
+    text-align: center;
+    line-height: 74rpx;
+}
+.nomore{
+    width: 254rpx;
+    height: 379rpx;
+    margin: 0 auto;
+    margin-top: 20%;
+    display: block;
+}
+.tis{
+    font-size: 24rpx;
+    text-align: center;
+    margin-top: 54rpx;
+}
+button{
+    background-color: #d96055;
+    font-size: 34rpx;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 100rpx;
+    margin-top: 34rpx;
+}
