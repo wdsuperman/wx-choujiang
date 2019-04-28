@@ -1,4 +1,5 @@
 /* pages/details/details.wxss */
+
 swiper{
     width: 100%;
     height: 414rpx;
@@ -7,3 +8,184 @@ swiper image{
     width: 100%;
     height: 414rpx;
 }
+.goodsList{
+    width: 90%;
+    margin: 0 auto;
+}
+.list{
+    display: flex;
+    margin-top: 24rpx;
+    font-size: 30rpx;
+}
+.goodsContent{
+    width: 76%;
+    margin-left: 26rpx;
+}
+.goodsNum{
+    margin-left: 32rpx;
+    color: #6b6b6b;
+    font-size: 28rpx;
+}
+.probability{
+    border-bottom: 2rpx solid #ededed;
+    color: #676767;
+    padding-bottom: 4rpx;
+}
+.kaijiang{
+    font-size: 26rpx;
+    color: #5c5c5c;
+}
+.time{
+    margin-top: 32rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 46rpx;
+}
+.line{
+    width: 100%;
+    height: 20rpx;
+    background-color: #f1f1f1;
+}
+.addLottery{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-top: 130rpx;
+    padding-bottom: 50rpx;
+}
+.addBtn{
+    color: #fff;
+    background-color: #e56363;
+    border-radius: 50%;
+    width: 220rpx;
+    height: 220rpx;
+    font-size: 40rpx;
+    margin-bottom: 36rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnD{
+    line-height: 60rpx;
+    width: 120rpx;
+}
+.btn1{
+    margin-top: 42rpx
+}
+.addNum{
+    font-size: 28rpx;
+    color: #6e6e6e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addImg{
+    margin-left: 8rpx;
+    width:15rpx;
+    height: 27rpx;
+}
+.addList{
+    margin: 0 auto;
+    margin-top: 100rpx;
+    width: 60%;
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: 18rpx;
+}
+.addList image{
+    background-color: #ddd;
+    width: 75rpx;
+    height: 75rpx;
+}
+.rs{
+    color: #4c4a5a;
+}
+.share{
+    width: 80rpx;
+    height: 80rpx;
+    font-size: 16rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 30rpx 10rpx #e8e8e8;
+    margin: 0;
+    padding: 0;
+}
+.share view{
+    line-height: 0;
+}
+.share::after{
+    border: 0;
+}
+.sponsorName{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.zzsTop{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20rpx;
+    border-bottom: 2rpx dashed #c1c1c1;
+    font-size: 28rpx;
+    line-height: 88rpx;
+}
+.arrow{
+    width: 14rpx;
+    height: 26rpx;
+    margin-left: 16rpx;
+}
+.zzsContent{
+    margin-left: 40rpx;
+    line-height: 82rpx;
+    font-size: 28rpx;
+}
+.shareImg{
+    margin-top: 10rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+/* 广告 */
+.guanggao{
+    width: 90%;
+    margin: 30rpx auto;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    border:2rpx solid#ac7e7e;
+    padding: 12rpx 22rpx 50rpx 32rpx;
+    background-color: #fff;
+}
+.ggTop{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28rpx;
+    color: #ec625b;
+    align-items: center;
+}
+.ggImg{
+    width: 35rpx;   
+    height: 42rpx;
+    margin-right: 16rpx;
+}
+.ggPic{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 25rpx;
+    background-color: #ddd;
+    margin-right: 18rpx;
+}
+.ggContent{
+    display: flex;
+    align-items: center;
+}
+.gginfo{
+    color: #e96260;
+    width: 78%;
+}
+.ggname{
+    font-weight: bold;
+    font-size: 34rpx;
+}
+.ggtis{
+    font-size: 28rpx
+}
+/* 广告 */

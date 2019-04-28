@@ -104,3 +104,48 @@
     width: 50rpx;
     height: 50rpx;
 }
+/* 广告 */
+.guanggao{
+    width: 90%;
+    margin: 30rpx auto;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    border:2rpx solid#ac7e7e;
+    padding: 12rpx 22rpx 50rpx 32rpx;
+    background-color: #fff;
+}
+.ggTop{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28rpx;
+    color: #ec625b;
+    align-items: center;
+}
+.ggImg{
+    width: 35rpx;   
+    height: 42rpx;
+    margin-right: 16rpx;
+}
+.ggPic{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 25rpx;
+    background-color: #ddd;
+    margin-right: 18rpx;
+}
+.ggContent{
+    display: flex;
+    align-items: center;
+}
+.gginfo{
+    color: #e96260;
+    width: 78%;
+}
+.ggname{
+    font-weight: bold;
+    font-size: 34rpx;
+}
+.ggtis{
+    font-size: 28rpx
+}
+/* 广告 */

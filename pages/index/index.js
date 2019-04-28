@@ -9,7 +9,7 @@ Page({
                 id: 1,
                 image: '', //商品图片
                 shangjia: '打卡56天领福利', // 右上角红框内字
-                time: '9小时41分钟后 自动开奖', // 开奖时间
+                time: '9小时41分钟后', // 开奖时间
                 add: true, //是否已参加
                 join: '仅限女性用户参与', // 参加性别限制
                 sp: [{
@@ -30,7 +30,7 @@ Page({
                 id: 2,
                 image: '',
                 shangjia: '打卡56天领福利',
-                time: '9小时41分钟后 自动开奖',
+                time: '9小时41分钟后',
                 add: true,
                 join: '',
                 sp: [{
@@ -57,7 +57,7 @@ Page({
                 id: 3,
                 image: '',
                 shangjia: '打卡56天领福利',
-                time: '9小时41分钟后 自动开奖',
+                time: '9小时41分钟后',
                 add: false,
                 join: '仅限女性用户参与',
                 sp: [{

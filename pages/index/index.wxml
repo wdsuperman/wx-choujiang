@@ -11,13 +11,15 @@
                     <text class='content1'> {{sp.content}} <text class='goodsNum'>x{{sp.num}}</text></text>
                 </view>
                 <view class='time'>
-                    <text>{{item.time}}</text>
+                    <text>{{item.time}} 自动开奖</text>
                     <view class='add' wx:if='{{item.add}}'>
                         <image class='addImg' src='../../image/sure.png' />
                         <text>已参与</text>
                     </view>
                 </view>
-                <view class='join' wx:if='{{item.join.length}}'>参与条件： <text class='tj'>{{item.join}}</text></view>
+                <view class='join' wx:if='{{item.join.length}}'>参与条件：
+                    <text class='tj'>{{item.join}}</text>
+                </view>
             </view>
         </view>
     </view>
@@ -27,4 +29,16 @@
             <image bindtap='sure' src='{{sure}}' />
         </view>
     </form>
+    <!-- 广告 -->
+        <view class='guanggao'>
+            <view class='ggTop'><image class='ggImg' src='../../image/hb.png'/><text>领取>></text></view>
+            <view class='ggContent'>
+                <image class='ggPic'src=''/>
+                <view class='gginfo'>
+                    <view class='ggname'>广告名</view>
+                    <view class='ggtis'>广告说明广告说明广告说明广告说明广告说明广告说明广告说明广告说明</view>
+                </view>
+            </view>
+        </view>
+    <!-- 广告 -->
 </view>

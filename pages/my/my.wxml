@@ -34,4 +34,16 @@
             <image class='arrow' src='{{item.arrow}}'/>
         </view>
     </view>
+    <!-- 广告 -->
+        <view class='guanggao'>
+            <view class='ggTop'><image class='ggImg' src='../../image/hb.png'/><text>领取>></text></view>
+            <view class='ggContent'>
+                <image class='ggPic'src=''/>
+                <view class='gginfo'>
+                    <view class='ggname'>广告名</view>
+                    <view class='ggtis'>广告说明广告说明广告说明广告说明广告说明广告说明广告说明广告说明</view>
+                </view>
+            </view>
+        </view>
+    <!-- 广告 -->
 </view>

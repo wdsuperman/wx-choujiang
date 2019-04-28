@@ -1,7 +1,8 @@
 {
     "pages": [
-        "pages/details/details",
         "pages/index/index",
+        "pages/details/details",
+        "pages/addAll/addAll",
         "pages/my/my",
         "pages/my/canyu/canyu",
         "pages/my/fabu/fabu",

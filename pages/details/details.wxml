@@ -1,12 +1,67 @@
 <view class='wrap'>
     <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{imgUrls}}">
+        <block wx:for="{{imgUrls}}" wx:key='{{item}}'>
             <swiper-item>
-                <image src="{{item}}"/>
+                <image src="{{item}}" />
             </swiper-item>
         </block>
     </swiper>
-    <view>
-        
+    <view class='goodsList'>
+        <view class='list' wx:for='{{list}}' wx:key='{{item.id}}'>
+            <view>{{item.title}} : </view>
+            <view class='goodsContent'>
+                <text>{{item.content}}</text>
+                <text class='goodsNum'>x{{item.num}}</text>
+                <text class='probability'>
+                    {{item.probability}}
+                </text>
+            </view>
+        </view>
+        <view class='time'>
+            <view class='kaijiang'>{{time}} 自动开奖</view>
+            <button class='share' open-type='share'>
+                <image class='shareImg' src='../../image/share.png'/>
+                <view>分享</view>
+            </button>
+        </view>
     </view>
+    <view class='line'></view>
+    <view class='zzs' bindtap='sponsor'>
+        <view class='zzsTop'>
+            <text>{{sponsor.title}}</text>
+            <view class='sponsorName'>
+                <text>{{sponsor.name}}</text>
+                <image class='arrow' src='{{sponsor.arrow}}' />
+            </view>
+        </view>
+        <view class='zzsContent'>{{sponsor.content}} </view>   
+    </view>
+    <view class='addLottery'>
+        <button class='addBtn' bindtap='lottery'>
+            <view class='btnD'>{{btnText}}</view>
+        </button>
+        <view class='addNum' bindtap='all'>
+            <view>已有5160人参与抽奖 查看全部</view>
+            <image class='addImg' src='../../image/arrow.png' />
+        </view>
+        <view class='addList'>
+            <image wx:for='{{addList}}' wx:key='{{item.id}}' src='{{item.avatar}}' />
+        </view>
+        <view class='addNum rs' bindtap='all'>
+            <view>共5160人参与, 查看全部</view>
+            <image class='addImg' src='../../image/arrow.png' />
+        </view>
+    </view>
+    <!-- 广告 -->
+        <view class='guanggao'>
+            <view class='ggTop'><image class='ggImg' src='../../image/hb.png'/><text>领取>></text></view>
+            <view class='ggContent'>
+                <image class='ggPic'src=''/>
+                <view class='gginfo'>
+                    <view class='ggname'>广告名</view>
+                    <view class='ggtis'>广告说明广告说明广告说明广告说明广告说明广告说明广告说明广告说明</view>
+                </view>
+            </view>
+        </view>
+    <!-- 广告 -->
 </view>

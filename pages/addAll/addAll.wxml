@@ -1,0 +1,29 @@
+<!--pages/addAll/addAll.wxml-->
+<!-- 广告 -->
+<!-- <view class='guanggao'>
+
+</view> -->
+<!-- 广告 -->
+
+<view class='tis'>共5160人参与,列表以概率码数量排序</view>
+<view class='paiming'>
+    <text>排名</text>
+    <text>概率</text>
+</view>
+<view class='userWrap'>
+    <view class='list' wx:for='{{peopleList}}' wx:key='{{item.id}}'>
+        <view class='listContent'>
+            <view class='ind'>{{index + 1}}</view>
+            <image class='avatar' src='{{item.avatar}}' />
+            <view>
+                <view class='ind'>{{item.name}}</view>
+                <view class='num'>{{item.num}}码</view>
+            </view>
+        </view>
+        <view class='time'>
+            <view class='gailv'>{{item.gailv}}</view>
+            <view class='day'><text>{{item.day}}</text><text class='times'>{{item.time}}</text></view>
+        </view>
+    </view>
+    <view class='more' wx:if='{{peopleList.length >= 40}}'>查看更多参与者</view>
+</view>
